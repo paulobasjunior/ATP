@@ -1,0 +1,1 @@
+document.write("Posso inserir o código JavaScript no elemento head...");

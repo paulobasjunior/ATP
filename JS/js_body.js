@@ -1,0 +1,1 @@
+document.write("Ou posso tb inserir o código JavaScript no elemento body...");
