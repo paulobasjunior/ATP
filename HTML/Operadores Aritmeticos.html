@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Operadores Aritméticos</title>
+	
+	
+</head>
+
+<body>
+	 
+	<h1>Tipos de Operadores Aritméticos em JavaScript</h1>
+		
+			
+	<script> // Aqui inicia o código JavaScrip
+		/*
+		### Operadores Aritméticos
+		+ soma
+		- subtração
+		* multiplicação
+		/ divisão
+		% módulo (resto da divisão inteira)
+		++ incremento
+		-- decremento
+	
+		### Operadores de Atribuição
+		= atribuição
+		+= soma e atribuição
+		-= subtração e atribuição
+		*= multiplicação e atribuição
+		/= divisão e atribuição
+		%= módulo e atribuição
+		
+		OBS:em JavaScript o operador '+' é usado para somar dois valores numéricos
+			e concatenar (juntar) 2 Strings.
+			var msg1 = "Primeira Mensagem...";
+			var msg2 = "Segunda Mensagem...";
+			var juntas = msg1 + " " + msg2;
+			
+			var soma = 50 + 50;   // soma contém 100 (um número).
+			
+			var strSoma = "50" + 50;  // strSoma contém a string 5050.
+			
+		*/
+		
+		var num1 = 100;
+		var num2 = 7;
+		var resultado = 0;  // armazenará o valor resultante da operaçõ aritmética
+		
+		document.write("num1 = " + num1 + " num2 = " + num2 + "<br>");
+		
+		resultado = num1 + num2;
+		document.write("num1 + num2 = " + resultado + "<br>");
+		
+		resultado = num1 - num2;
+		document.write("num1 - num2 = " + resultado + "<br>");
+		
+		resultado = num1 * num2;
+		document.write("num1 * num2 = " + resultado + "<br>");
+		
+		resultado = num1 / num2;
+		document.write("num1 / num2 = " + resultado + "<br>");
+		
+		resultado = num1 % num2;
+		document.write("num1 % num2 = " + resultado + "<br>");
+		
+		num2 += 10;
+		document.write("Valor de num2 após num2 += 10: " + num2 + "<br>");
+		
+		num2 -= 10;
+		document.write("Valor de num2 após num2 -= 10: " + num2 + "<br>");
+		
+		num2 *= 10;
+		document.write("Valor de num2 após num2 *= 10: " + num2 + "<br>");
+		
+		num2 /= 10;
+		document.write("Valor de num2 após num2 /= 10: " + num2 + "<br>");
+		
+		num2 %= 10;
+		document.write("Valor de num2 após num2 %= 10: " + num2 + "<br>");
+	</script>
+	
+	
+	
+</body>
+
+</html>
