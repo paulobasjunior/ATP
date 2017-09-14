@@ -1,0 +1,26 @@
+/* Comentário CSS */
+	/* {margin:0;padding:0;border:0;}*/
+/*	p {
+		font-family: Arial;
+		font-size: 80%;
+		color: blue;
+	}*/
+	
+	h1 {
+		border: 12px dotted #5CE2BA;
+		padding-top: 40px;
+		padding-right: 29px;
+		padding-bottom: 40px;
+		padding-left: 29px;
+		/* ou: padding: 40px 29px 40px 29px */
+	}
+
+	p {
+		border: 12px double #5CE2BA;
+		padding-top: 10px;
+		padding-right: 100px;
+		padding-bottom: 40px;
+		padding-left: 100px;
+		/* ou: padding: 10px 100px 40px 100px */
+	}
+		
