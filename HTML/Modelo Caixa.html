@@ -8,25 +8,27 @@
 	
 	
 	<style> 
-		img {
-			display: block;
-		}
-		
-		img#caixa {
-			margin:20px;
+				
+		.imgs {
+			display: inline-block;
+			width:100%;
+			
 			
 		}
 		
+				
 		img#paris {
 			border-radius: 8px;
 			border:2px lightgray solid;
-			margin: 0;
+			margin: 10px;
+			padding:10px;
+			
 			
 		}
 	
 		pre {
 			font-weight: bold;
-			/*display: inline-block;*/
+			display: inline-block;
 		}
 		
 		.cidadeParis {
@@ -39,6 +41,14 @@
 			border-radius: 5px;
 		}
 		
+		div#boxModel {
+			border: 6px solid #949599;
+			height: 100px;
+			margin: 20px;
+			padding: 10px;
+			width: 400px;
+		}
+
 		
 	</style>
 </head>
@@ -46,23 +56,25 @@
 <body>
 
 	<h1>Modelo Caixa (Box Model) dos Elementos HTML</h1>
-	
-	<img id="caixa" src="img/box-model.png" alt="Box Model" width="600" height="250">
-	
-	<pre>
+	<div class="imgs">
+		<img id="caixa" src="img/box-model.png" alt="Box Model" width="500" height="250">
+		
+		<!--img id="dimens" src="img/dimensao.jpg" alt="Paris" width="500" height="50"-->
+		<pre>
 	Width = 20px + 6px + 20px + 400px + 20px + 6px + 20px = 492px
 	Height = 20px + 6px + 20px + 100px + 20px + 6px + 20px = 192px
 	</pre>
-	
-	<img id="paris" src="img/paris.jpg" alt="Paris" width="200" height="200">
-	
-	
-	
 		
-	<p class="paras" id="para1"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-	Rerum, exercitationem, porro, quasi maiores minima commodi delectus accusantium 
-	aut sequi facilis reiciendis culpa nesciunt. Tenetur, molestiae at quos error 
-	earum aliquam.</b></p>
+		<img id="paris" src="img/paris.jpg" alt="Paris" width="200" height="200">
+	
+	</div>
+	
+	<div id="boxModel">	
+		<p class="paras" id="para1"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+		Rerum, exercitationem, porro, quasi maiores minima commodi delectus accusantium 
+		aut sequi facilis reiciendis culpa nesciunt. Tenetur, molestiae at quos error 
+		earum aliquam.</b></p>
+	</div>
 	
 	<p class="para para1"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 	Rerum, exercitationem, porro, quasi maiores minima commodi delectus accusantium 
