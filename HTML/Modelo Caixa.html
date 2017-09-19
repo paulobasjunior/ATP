@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Modelo Caixa (Box Model) dos Elementos HTML</title>
+	
+	
+	
+	<style> 
+		img {
+			display: block;
+		}
+		
+		img#caixa {
+			margin:20px;
+			
+		}
+		
+		img#paris {
+			border-radius: 8px;
+			border:2px lightgray solid;
+			margin: 0;
+			
+		}
+	
+		pre {
+			font-weight: bold;
+			/*display: inline-block;*/
+		}
+		
+		.cidadeParis {
+			color:blue;
+			font-weight: bold;
+		}
+		
+		#parisIcon {
+			display:inline;
+			border-radius: 5px;
+		}
+		
+		
+	</style>
+</head>
+
+<body>
+
+	<h1>Modelo Caixa (Box Model) dos Elementos HTML</h1>
+	<img id="paris" src="img/paris.jpg" alt="Paris" width="200" height="200">
+	<img id="caixa" src="img/box-model.png" alt="Box Model" width="600" height="250">
+	
+	<pre>
+	Width = 20px + 6px + 20px + 400px + 20px + 6px + 20px = 492px
+	Height = 20px + 6px + 20px + 100px + 20px + 6px + 20px = 192px
+	</pre>
+	
+	
+		
+	<p class="paras" id="para1"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+	Rerum, exercitationem, porro, quasi maiores minima commodi delectus accusantium 
+	aut sequi facilis reiciendis culpa nesciunt. Tenetur, molestiae at quos error 
+	earum aliquam.</b></p>
+	
+	<p class="para para1"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+	Rerum, exercitationem, porro, quasi maiores minima commodi delectus accusantium 
+	aut sequi facilis reiciendis culpa nesciunt. Tenetur, molestiae at quos error 
+	earum aliquam.</b></p>
+	
+	<p  class="paras" id="para2">Explicabo, veritatis, cum, ad itaque illo iusto dicta 
+	obcaecati rem laudantium nostrum hic debitis voluptatibus assumenda dolorem illum 
+	eos dolorum eius harum nihil qui ab ullam vitae eaque. Nemo, accusantium?</p>
+	
+	<p  class="para para2">Explicabo, veritatis, cum, ad itaque illo iusto dicta 
+	obcaecati rem laudantium nostrum hic debitis voluptatibus assumenda dolorem illum 
+	eos dolorum eius harum nihil qui ab ullam vitae eaque. Nemo, accusantium?</p>
+	
+	<p  class="paras" id="para3">Ipsum, placeat sapiente quibusdam minima ullam quasi asperiores 
+	dicta libero quae vitae. Rerum, accusamus, dolorum, eligendi dolores assumenda minus 
+	quae expedita ipsam architecto eaque numquam nobis praesentium est consectetur sequi!</p>
+	
+	<p  class="para para3">Ipsum, placeat sapiente quibusdam minima ullam quasi asperiores 
+	dicta libero quae vitae. Rerum, accusamus, dolorum, eligendi dolores assumenda minus 
+	quae expedita ipsam architecto eaque numquam nobis praesentium est consectetur sequi!</p>
+	
+	<p  id="para4">Debitis, repudiandae, nihil at quos numquam iusto repellat 
+	hic culpa temporibus quis rerum atque quam id ipsam suscipit neque ea incidunt vero 
+	voluptas eligendi? Molestiae, veniam sint ipsam totam nam.</p>
+	
+	<p class="cidadeParis">Paris <img id="parisIcon" src="img/paris.jpg" alt="Paris" width="100 height="100"> é a capital e a mais populosa cidade da França, bem como a capital da região 
+	administrativa de Ilha de França. A cidade se situa em um dos meandros do Sena, no centro 
+	da bacia parisiense, entre os confluentes do Marne e do Sena rio acima, e do Oise e do Sena rio abaixo. 
+	Como a antiga capital de um império estendido pelos cinco continentes, é, hoje, a capital do mundo 
+	francófono.
+	</p>
+	
+	
+	
+	
+</body>
+
+</html>
