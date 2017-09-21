@@ -8,20 +8,28 @@
 	
 	
 	<style> 
-				
-		.imgs {
+	
+		body {
+			background-color: #EEE;
+		}
+	
+		h1 {
+			background-color: #6CF;
+			color: white;
+			text-align:center;
+		}
+		
+		#imgBoxModel {
 			display: inline-block;
-			width:100%;
+			
 			
 			
 		}
 		
 				
-		img#paris {
+		#imgParis {
 			border-radius: 8px;
-			border:2px lightgray solid;
-			margin: 10px;
-			padding:10px;
+			
 			
 			
 		}
@@ -29,6 +37,7 @@
 		pre {
 			font-weight: bold;
 			display: inline-block;
+			
 		}
 		
 		.cidadeParis {
@@ -37,16 +46,13 @@
 		}
 		
 		#parisIcon {
-			display:inline;
+			display:inline-block;
 			border-radius: 5px;
 		}
 		
-		div#boxModel {
-			border: 6px solid #949599;
-			height: 100px;
-			margin: 20px;
-			padding: 10px;
-			width: 400px;
+		#boxModel {
+			border: 3px solid #949599;
+						
 		}
 
 		
@@ -54,27 +60,28 @@
 </head>
 
 <body>
-
+	
 	<h1>Modelo Caixa (Box Model) dos Elementos HTML</h1>
-	<div class="imgs">
-		<img id="caixa" src="img/box-model.png" alt="Box Model" width="500" height="250">
+	<div>
+		<img id="imgBoxModel" src="img/box-model.png" alt="Box Model" width="500" height="250">
 		
-		<!--img id="dimens" src="img/dimensao.jpg" alt="Paris" width="500" height="50"-->
 		<pre>
 	Width = 20px + 6px + 20px + 400px + 20px + 6px + 20px = 492px
 	Height = 20px + 6px + 20px + 100px + 20px + 6px + 20px = 192px
-	</pre>
+	
+	margin: 20px; border: 6px; padding: 20px;</pre>
 		
-		<img id="paris" src="img/paris.jpg" alt="Paris" width="200" height="200">
+		<img id="imgParis" src="img/paris.jpg" alt="Paris" width="200" height="200">
 	
 	</div>
 	
-	<div id="boxModel">	
-		<p class="paras" id="para1"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+	
+		<p id="boxModel"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 		Rerum, exercitationem, porro, quasi maiores minima commodi delectus accusantium 
 		aut sequi facilis reiciendis culpa nesciunt. Tenetur, molestiae at quos error 
 		earum aliquam.</b></p>
-	</div>
+	
+	<hr/>
 	
 	<p class="para para1"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 	Rerum, exercitationem, porro, quasi maiores minima commodi delectus accusantium 
@@ -100,6 +107,8 @@
 	<p  id="para4">Debitis, repudiandae, nihil at quos numquam iusto repellat 
 	hic culpa temporibus quis rerum atque quam id ipsam suscipit neque ea incidunt vero 
 	voluptas eligendi? Molestiae, veniam sint ipsam totam nam.</p>
+	
+	<hr/>
 	
 	<p class="cidadeParis">Paris <img id="parisIcon" src="img/paris.jpg" alt="Paris" width="100 height="100"> é a capital e a mais populosa cidade da França, bem como a capital da região 
 	administrativa de Ilha de França. A cidade se situa em um dos meandros do Sena, no centro 
