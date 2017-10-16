@@ -3,95 +3,64 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Operadores Aritméticos</title>
+	<title>Operadores Lógicos</title>
 	
 	
 </head>
 
 <body>
 	 
-	<h1>Tipos de Operadores Aritméticos em JavaScript</h1>
+	<h1>Tipos de Operadores Lógicos em JavaScript</h1>
 		
-			
-	<script> // Aqui inicia o código JavaScrip
+		
+	<h2>O operador AND (&&) retorna true se as 2 expressões são verdadeiras (true), 
+		caso contrário, retorna falso (false).</h2>	
+	<script> // Aqui inicia o código JavaScript
 		/*
-		### Operadores Aritméticos
-		+ soma
-		- subtração
-		* multiplicação
-		/ divisão
-		% módulo (resto da divisão inteira)
-		++ incremento
-		-- decremento
-	
-		### Operadores de Atribuição
-		= atribuição
-		+= soma e atribuição
-		-= subtração e atribuição
-		*= multiplicação e atribuição
-		/= divisão e atribuição
-		%= módulo e atribuição
-		
-		OBS:em JavaScript o operador '+' é usado para somar dois valores numéricos
-			e concatenar (juntar) 2 Strings.
-			var msg1 = "Primeira Mensagem...";
-			var msg2 = "Segunda Mensagem...";
-			var juntas = msg1 + " " + msg2;
-			
-			var soma = 50 + 50;   // soma contém 100 (um número).
-			
-			var strSoma = "50" + 50;  // strSoma contém a string 5050.
-			
+			&&	e (and)     Ex.: (x < 10 && y > 1) igual a true
+			||	ou (or)     Ex.: (x == 5 || y == 5) igual a false
+			!	não (not)   Ex.: !(x == y) igual a true
 		*/
 		
-		var num1 = 100;
-		var num2 = 7;
-		var resultado = 0;  // armazenará o valor resultante da operaçõ aritmética
-		
-		document.write("num1 = " + num1 + " num2 = " + num2 + "<br>");
-		
-		resultado = num1 + num2;
-		document.write("num1 + num2 = " + resultado + "<br>");
-		
-		resultado = num1 - num2;
-		document.write("num1 - num2 = " + resultado + "<br>");
-		
-		resultado = num1 * num2;
-		document.write("num1 * num2 = " + resultado + "<br>");
-		
-		resultado = num1 / num2;
-		document.write("num1 / num2 = " + resultado + "<br>");
-		
-		resultado = num1 % num2;
-		document.write("num1 % num2 = " + resultado + "<br>");
-		
-		num2 += 10;
-		document.write("Valor de num2 após num2 += 10: " + num2 + "<br>");
-		
-		num2 -= 10;
-		document.write("Valor de num2 após num2 -= 10: " + num2 + "<br>");
-		
-		num2 *= 10;
-		document.write("Valor de num2 após num2 *= 10: " + num2 + "<br>");
-		
-		num2 /= 10;
-		document.write("Valor de num2 após num2 /= 10: " + num2 + "<br>");
-		
-		num2 %= 10;
-		document.write("Valor de num2 após num2 %= 10: " + num2 + "<br>");
-		
-		var msg1 = "Primeira Mensagem...";
-		var msg2 = "Segunda Mensagem...";
-		var juntas = msg1 + " " + msg2;
-		document.write(juntas + "<br>");
-			
-		var soma = 50 + 50;   // soma contém 100 (um número).
-		document.write("soma = " + soma + "<br>");
-			
-		var strSoma = "50" + 50;  // strSoma contém a string 5050.
-		document.write("strSoma = " + strSoma + "<br>");
+		var x = 6;
+		var y = 3;
+
+		document.write(	(x < 10 && y > 1) + "<br>" + 
+						(x < 10 && y < 1));
 	</script>
 	
+	<h2>O operador OR (||) retorna true se 1 ou 2 expressões são verdadeiras (true), 
+		caso contrário, retorna falso (false).</h2>
+	<script> // Aqui inicia o código JavaScript
+		/*
+			&&	e (and)     Ex.: (x < 10 && y > 1) igual a true
+			||	ou (or)     Ex.: (x == 5 || y == 5) igual a false
+			!	não (not)   Ex.: !(x == y) igual a true
+		*/
+		
+		var x = 6;
+		var y = 3;
+
+		document.write(	(x == 5 || y == 5) + "<br>" + 
+						(x == 6 || y == 0) + "<br>" + 
+						(x == 0 || y == 3) + "<br>" + 
+						(x == 6 || y == 3) );
+	</script>
+	
+	<h2>O operador NOT (!) retorna true para expressões falsas e false para expressões verdadeiras.</h2>
+	<script> // Aqui inicia o código JavaScript
+		/*
+			&&	e (and)     Ex.: (x < 10 && y > 1) igual a true
+			||	ou (or)     Ex.: (x == 5 || y == 5) igual a false
+			!	não (not)   Ex.: !(x == y) igual a true
+		*/
+		
+		var x = 6;
+		var y = 3;
+
+		document.write(	!(x === y) + "<br>" + 
+						!(x > y) );
+	</script>
 	
 	
 </body>
