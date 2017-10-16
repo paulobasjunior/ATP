@@ -3,14 +3,14 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Operadores Aritméticos</title>
+	<title>Operadores de Comparação</title>
 	
 	
 </head>
 
 <body>
 	 
-	<h1>Tipos de Operadores Aritméticos em JavaScript</h1>
+	<h1>Tipos de Operadores de Comparação em JavaScript</h1>
 		
 			
 	<script> // Aqui inicia o código JavaScript
@@ -26,54 +26,12 @@
 			?	operador ternário. 
 		*/
 		
-		
-		var num1 = 100;
-		var num2 = 7;
-		var resultado = 0;  // armazenará o valor resultante da operaçõ aritmética
-		
-		document.write("num1 = " + num1 + " num2 = " + num2 + "<br>");
-		
-		resultado = num1 + num2;
-		document.write("num1 + num2 = " + resultado + "<br>");
-		
-		resultado = num1 - num2;
-		document.write("num1 - num2 = " + resultado + "<br>");
-		
-		resultado = num1 * num2;
-		document.write("num1 * num2 = " + resultado + "<br>");
-		
-		resultado = num1 / num2;
-		document.write("num1 / num2 = " + resultado + "<br>");
-		
-		resultado = num1 % num2;
-		document.write("num1 % num2 = " + resultado + "<br>");
-		
-		num2 += 10;
-		document.write("Valor de num2 após num2 += 10: " + num2 + "<br>");
-		
-		num2 -= 10;
-		document.write("Valor de num2 após num2 -= 10: " + num2 + "<br>");
-		
-		num2 *= 10;
-		document.write("Valor de num2 após num2 *= 10: " + num2 + "<br>");
-		
-		num2 /= 10;
-		document.write("Valor de num2 após num2 /= 10: " + num2 + "<br>");
-		
-		num2 %= 10;
-		document.write("Valor de num2 após num2 %= 10: " + num2 + "<br>");
-		
-		var msg1 = "Primeira Mensagem...";
-		var msg2 = "Segunda Mensagem...";
-		var juntas = msg1 + " " + msg2;
-		document.write(juntas + "<br>");
+		document.write("<h3>Atribui 5 à variável x, e mostra o valor lógico da comparação (x == 8):</h3>");
+		var x = 5;
+		document.write((x == 8));
 			
-		var soma = 50 + 50;   // soma contém 100 (um número).
-		document.write("soma = " + soma + "<br>");
-			
-		var strSoma = "50" + 50;  // strSoma contém a string 5050.
-		document.write("strSoma = " + strSoma + "<br>");
-		
+		var num1 = 55, num2 = 100;
+		document.write("<h3>Operador Ternário:</h3>");
 		var resultado = num1 > num2 ? "num1 > num2" : "num1 <= num2";
 		document.write("Resultado do operador ternário: " + resultado);
 	</script>
