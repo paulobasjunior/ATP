@@ -14,14 +14,16 @@
 		}
 	
 		h1 {
-			background-color: #6CF;
+			background-color: #66CCFF;
 			color: white;
 			text-align:center;
+			border:4px solid red;
 		}
 		
 		#imgBoxModel {
-			display: inline-block;
-			
+			/*display: inline-block;*/
+			margin:0 auto;
+			border:0;
 			
 			
 		}
@@ -29,7 +31,10 @@
 				
 		#imgParis {
 			border-radius: 8px;
-			
+			border: 1px solid gray;
+			padding:0px;
+			margin:0px;
+			/*display: inline-block;*/
 			
 			
 		}
@@ -38,6 +43,19 @@
 			font-weight: bold;
 			display: inline-block;
 			
+			
+		}
+		
+		#par1, #par2 {
+			padding:0;
+			border:0;
+			margin:1px;
+		}
+		
+		#par3 {
+			padding:2px;
+			border:1px;
+			margin:1px;
 		}
 		
 		.cidadeParis {
@@ -48,13 +66,47 @@
 		#parisIcon {
 			display:inline-block;
 			border-radius: 5px;
+			margin-top:5px;
+			margin-left:2px;
+			margin-right:3px;
+			margin-bottom:1px;
+			
+			margin:5px 3px 1px 2px;
 		}
 		
 		#boxModel {
 			border: 3px solid #949599;
 						
 		}
+		
+		#corFavorita1 {
+			color: blue;
+			font-weight: bold;
+		}
+		
+		#corFavorita2 {
+			color: green;
+			font-weight: bold;
+		}
 
+		hr {
+			background-color:red;
+			border:5px solid red;
+		}
+		
+		p#teste + p { color:#f00; }
+		
+		.texto{column-count:3}
+		
+		h1 {
+			display:inline;
+		}
+		
+		#img {display: block;
+   
+    /*width: 40%;*/
+	margin:0 auto;
+		}
 		
 	</style>
 </head>
@@ -63,13 +115,13 @@
 	
 	<h1>Modelo Caixa (Box Model) dos Elementos HTML</h1>
 	<div>
-		<img id="imgBoxModel" src="img/box-model.png" alt="Box Model" width="500" height="250">
+		<img id="imgBoxModel" src="img/box-model.png" alt="Box Model" width="350" height="250">
 		
 		<pre>
-	Width = 20px + 6px + 20px + 400px + 20px + 6px + 20px = 492px
-	Height = 20px + 6px + 20px + 100px + 20px + 6px + 20px = 192px
+Width = 20px + 6px + 20px + 400px + 20px + 6px + 20px = 492px
+Height = 20px + 6px + 20px + 100px + 20px + 6px + 20px = 192px
 	
-	margin: 20px; border: 6px; padding: 20px;</pre>
+margin: 20px; border: 6px; padding: 20px;</pre>
 		
 		<img id="imgParis" src="img/paris.jpg" alt="Paris" width="200" height="200">
 	
@@ -116,9 +168,33 @@
 	Como a antiga capital de um império estendido pelos cinco continentes, é, hoje, a capital do mundo 
 	francófono.
 	</p>
+	<span>O meu texto favorito em latim o <div id="corFavorita1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+	Rerum, exercitationem, porro, quasi maiores minima commodi delectus accusantium 
+	aut sequi facilis reiciendis culpa nesciunt. Tenetur, molestiae at quos error 
+	earum aliquam.</div></span>
+		
+		<div>O meu texto favorito em latim o <span id="corFavorita2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+	Rerum, exercitationem, porro, quasi maiores minima commodi delectus accusantium 
+	aut sequi facilis reiciendis culpa nesciunt. Tenetur, molestiae at quos error 
+	earum aliquam.</span></div>
 	
+	<p>Parágrafo Anterior</p>
 	
-	
+    <p>Parágrafo 1</p>
+    <p id="teste">Parágrafo 2</p>
+	<p>Parágrafo 3</p>
+
+	 <div class="texto"> 
+	 é a capital e a mais populosa cidade da França, bem como a capital da região 
+	administrativa de Ilha de França. A cidade se situa em um dos meandros do Sena, no centro 
+	da bacia parisiense, entre os confluentes do Marne e do Sena rio acima, e do Oise e do Sena rio abaixo. 
+	Como a antiga capital de um império estendido pelos cinco continentes, é, hoje, a capital do mundo 
+	francófono.
+	 </div>
+	 
+	 
+	 <img id="img" src="img/box-model.png" alt="Box Model" width="300" height="250">
+	 
 	
 </body>
 

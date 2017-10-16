@@ -7,7 +7,7 @@
 	}*/
 	
 	h1 {
-		border: 12px dotted #5CE2BA;
+		border: 12px dotted red;
 		padding-top: 40px;
 		padding-right: 29px;
 		padding-bottom: 40px;
@@ -16,7 +16,7 @@
 	}
 
 	p {
-		border: 12px double #5CE2BA;
+		border: 12px double black;
 		padding-top: 10px;
 		padding-right: 100px;
 		padding-bottom: 40px;
