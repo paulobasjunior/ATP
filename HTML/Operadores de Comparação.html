@@ -15,7 +15,7 @@
 			
 	<script> // Aqui inicia o código JavaScript
 		/*
-			==	equal
+			==	equal     
 			===	valor igual e tipo igual
 			!=	diferente
 			!==	valor diferente ou tipo diferente
@@ -26,13 +26,29 @@
 			?	operador ternário. 
 		*/
 		
-		document.write("<h3>Atribui 5 à variável x, e mostra o valor lógico da comparação (x == 8):</h3>");
+		document.write("<h3>Atribui 5 à variável x, e mostra o valor lógico da comparação</h3>");
 		var x = 5;
-		document.write((x == 8));
+		document.write("<pre>x == 8     " + (x == 8) + "</pre>");
+		document.write("<pre>x == 5     " + (x == 5) + "</pre>");
+		document.write('<pre>x == "5"   ' + (x == "5") + "</pre>");
+		document.write("<pre>x === 5    " + (x === 5) + "</pre>");
+		document.write('<pre>x === "5"  ' + (x === "5") + "</pre>");
+		document.write('<pre>x != 8     ' + (x != 8) + "</pre>");	
+		document.write("<pre>x !== 5    " + (x !== 5) + "</pre>");
+		document.write("<pre>x !== 8    " + (x !== 8) + "</pre>");
+		document.write('<pre>x !== "5"  ' + (x !== "5") + "</pre>");
 			
-		var num1 = 55, num2 = 100;
-		document.write("<h3>Operador Ternário:</h3>");
+		var num1 = 555, num2 = 100;
+		document.write("<pre>num1 = " + num1 + "     num2 = " + num2 + "</pre>");	
+		document.write("<pre>num1 > num2 " + (num1 > num2) + "</pre>");
+		document.write("<pre>num1 < num2 " + (num1 < num2) + "</pre>");
+		document.write("<pre>num1 >= num2 " + (num1 >= num2) + "</pre>");
+		document.write("<pre>num1 <= num2 " + (num1 <= num2) + "</pre>");
+		
 		var resultado = num1 > num2 ? "num1 > num2" : "num1 <= num2";
+		document.write("<h3>Operador Ternário:</h3>");
+		document.write("<pre><b>num1 = " + num1 + "     num2 = " + num2 + "</b></pre>");
+		
 		document.write("Resultado do operador ternário: " + resultado);
 	</script>
 	
