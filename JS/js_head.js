@@ -1,1 +1,1 @@
-document.write("Posso inserir o código JavaScript no elemento head.");
+document.write("Posso inserir o código JavaScript no <strong>elemento head em um arquivo externo .js.</strong><br/>");
